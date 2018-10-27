@@ -1,0 +1,340 @@
+p a
+{
+	display: inline;
+	position: relative;
+	color: inherit;
+	border-bottom: solid 1px #ffa07f;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+a, a:hover, a:visited, a:active, a:link
+{
+	text-decoration: none;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+p a:active
+{
+	position: relative;
+	color: #FF6347;
+}
+p a:hover
+{
+	color: #FFFFFF;
+	background: black;
+}
+p a:hover::after
+{
+	opacity: 0.2;
+}
+::selection
+{
+	background: #fde0db;
+	color: #ff4200;
+}
+p::selection
+{
+	background: #fde0db;
+}
+h1{font-size: 72px;}
+h2{font-size: 30px;}
+h3{font-size: 18px;}
+h4{font-size: 14px;}
+h5{font-size: 11px;}
+h1, h2, h3, h4, h5, h6
+{
+	color: #28282;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+h1::selection, 
+h2::selection, 
+h3::selection, 
+h4::selection, 
+h5::selection, 
+h6::selection
+
+.super_container
+{
+	width: 100%;
+	overflow: hidden;
+	padding-left: 45px;
+	padding-right: 45px;
+}
+.button
+{
+	width: 187px;
+	height: 66px;
+	background: #ff4200;
+	overflow: hidden;
+}
+.button a
+{
+	display: block;
+	width: 100%;
+	color: #FFFFFF;
+	font-size: 11px;
+	font-weight: 300;
+	line-height: 66px;
+	text-transform: uppercase;
+	letter-spacing: 6.7px;
+	
+}
+.button a img
+{
+	display: inline-block;
+	width: 13px !important;
+	height: 7px;
+	margin-left: 4px;
+}
+.button a::after
+{
+	display: block;
+	position: absolute;
+	top: -50%;
+	left: -70px;
+	width: 60px;
+	height: 200%;
+	background: rgba(255,255,255,0.1);
+	content: '';
+	-webkit-transform: rotate(12.5deg);
+	-moz-transform: rotate(12.5deg);
+	-ms-transform: rotate(12.5deg);
+	-o-transform: rotate(12.5deg);
+	transform: rotate(12.5deg);
+	-webkit-transition: all 400ms ease;
+	-moz-transition: all 400ms ease;
+	-ms-transition: all 400ms ease;
+	-o-transition: all 400ms ease;
+	transition: all 400ms ease;
+	z-index: 0;
+}
+.button a:hover::after
+{
+	left: calc(100% + 70px);
+}
+
+
+/*********************************
+3. Header
+*********************************/
+
+.header
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 110px;
+	padding-left: 48px;
+	padding-right: 48px;
+	z-index: 20;
+	background: #FFFFFF;
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
+}
+
+/*********************************
+3.1 Logo
+*********************************/
+
+.logo_container
+{
+	flex-basis: 50%;
+}
+.logo
+{
+	margin-left: 7px;
+	float: left;
+}
+.logo a
+{
+	font-family: 'Bradley Hand ITC';
+	font-size: 36px;
+	font-weight: bolder;
+	color: blue;
+	text-transform: uppercase;
+}
+.logo span:first-of-type
+{
+	position: absolute;
+	top: 0;
+	left: -5px;
+	color: #ff4200;
+	z-index: -1;
+}
+.logo span:last-of-type
+{
+	color: #ff4200;
+}
+
+/*********************************
+3.2 Main Navigation
+*********************************/
+
+.main_nav
+{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	height: 100%;
+	flex-basis: 200%;
+	text-align: right;
+	background-color:yellow;
+}
+.nav_items
+{
+	height: 100%;
+}
+.nav_items li
+{
+	display: inline-block;
+	margin-left: 35px;
+	height: 100%;
+}
+.nav_items li a
+{
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: black;
+	letter-spacing: 3.5px;
+	height: 100%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-left: 14px;
+	padding-right: 10px;
+}
+.nav_items li.active
+{
+	background: #ff4200;
+}
+.nav_items li.active a
+{
+	color: #FFFFFF;
+}
+.nav_items li:hover
+{
+	background: black;
+}
+.nav_items li:hover a
+{
+	color: #FFFFFF;
+}
+
+#home_image{
+	width: 1000px;
+}
+
+#div_hello{}
+
+#div_intro{
+	margin-top: 20px;
+	border: dashed;
+	background-color:green;
+}
+
+.img_into{
+	margin-left: 100px;
+}
+
+.img_into1{
+	margin-left: 100px;
+}
+.lbl_detail{
+	display: inline-block;
+	width: 100px;
+	height: 20px;
+	margin-left: 50px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.field_detail{
+	width: 500px;
+	height: 25px;
+}
+
+#lbl_destination{
+	margin-left: 50px;
+	height: 20px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.check_destination{
+	margin-left: 300px;
+}
+
+.radio_gender{
+	height: 20px;
+	width: 150px;
+
+}
+
+#cmb_country{
+	height: 30px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#btn_submit{
+	margin-left: 450px;
+	width: 100px;
+	height: 50px;
+	font-weight: bold;
+	font-size: 18px;
+	border: solid;
+	border-radius: 25px;
+}
+
+#btn_clear{
+	width: 100px;
+	height: 50px;
+	font-weight: bold;
+	font-size: 16px;
+	border: solid;
+	border-radius: 10px;
+	float: left;
+}
+
+#div_reg_data{
+	background-color: rgb(223, 210, 215);
+	padding: 20px;
+	margin-top: 50px;
+	height: 1000px;
+}
+
+#div_top_exp{
+	width: 500px;
+	float: left;	
+}
+
+#div_form_data{
+	width: 750px;
+	float: left;
+}
+
+#img_reg{
+	width: 500px;
+	height: 250px;
+	margin-top: 75px;
+}
+
+#vid1{
+	margin-top: 50px;
+	
+}
